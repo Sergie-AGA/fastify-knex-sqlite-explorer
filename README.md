@@ -3,6 +3,6 @@ The goal of this project is to explore backend possibilities based on a stack us
 
 ## Goals:
 [X] - Learn how to do a basic crud API with
-[] - Add automated tests
-[] - Convert functionality into a poll handler
-[] - Add a frontend to it
+[X] - Add automated tests
+[ ] - Add functionality to handle poll creation
+[ ] - Add a frontend to it
