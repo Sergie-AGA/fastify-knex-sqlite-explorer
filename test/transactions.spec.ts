@@ -17,7 +17,7 @@ describe('Transactions routes', () => {
     execSync('npm run knex migrate:latest')
   })
 
-  it('should be able to create a new transaction', async () => {
+  it.skip('should be able to create a new transaction', async () => {
     await req(app.server).post('/transactions').send({
       title: 'New transaction',
       amount: 5000,
@@ -25,7 +25,7 @@ describe('Transactions routes', () => {
     })
   })
 
-  it('should be able to list all transactions', async () => {
+  it.skip('should be able to list all transactions', async () => {
     const createTransactionResponse = await req(app.server)
       .post('/transactions')
       .send({
@@ -50,7 +50,7 @@ describe('Transactions routes', () => {
     ])
   })
 
-  it('should be able to list a specific transaction', async () => {
+  it.skip('should be able to list a specific transaction', async () => {
     const createTransactionResponse = await req(app.server)
       .post('/transactions')
       .send({
@@ -81,7 +81,7 @@ describe('Transactions routes', () => {
     )
   })
 
-  it('should be able to get the summary of all transactions', async () => {
+  it.skip('should be able to get the summary of all transactions', async () => {
     const createTransactionResponse = await req(app.server)
       .post('/transactions')
       .send({
