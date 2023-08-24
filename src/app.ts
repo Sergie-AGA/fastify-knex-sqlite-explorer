@@ -3,13 +3,17 @@ import { transactionsRoutes } from './routes/transactions'
 import { pollsRoutes } from './routes/polls'
 import cookie from '@fastify/cookie'
 import { appRoutes } from './http/routes'
-import { error } from 'console'
 import { ZodError } from 'zod'
 import { env } from './env'
+import fastifyJwt from '@fastify/jwt'
 
 export const app = fastify()
 
 app.register(cookie)
+
+app.register(fastifyJwt, {
+  secret: env.JWT_SECRET,
+})
 
 // app.addHook('preHandler', async (req, res) => {
 // Here I can assign a middleware that runs for any request
