@@ -6,7 +6,9 @@ export default <Environment>{
     console.log('ran')
 
     return {
-      teardown() {},
+      async teardown() {
+        console.log('teardown')
+      },
     }
   },
 }
