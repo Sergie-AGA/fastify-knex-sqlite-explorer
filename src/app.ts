@@ -2,7 +2,8 @@ import fastify from 'fastify'
 import { transactionsRoutes } from './routes/transactions'
 import { pollsRoutes } from './routes/polls'
 import cookie from '@fastify/cookie'
-import { appRoutes } from './http/routes'
+import { usersRoutes } from './http/controllers/users/routes'
+import { gymsRoutes } from './http/controllers/gyms/routes'
 import { ZodError } from 'zod'
 import { env } from './env'
 import fastifyJwt from '@fastify/jwt'
@@ -25,7 +26,8 @@ app.register(transactionsRoutes, {
 app.register(pollsRoutes, {
   prefix: 'polls',
 })
-app.register(appRoutes)
+app.register(usersRoutes)
+app.register(gymsRoutes)
 
 app.setErrorHandler((err, _, res) => {
   if (err instanceof ZodError) {
