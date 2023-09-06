@@ -9,7 +9,7 @@ describe('Search Gyms (e2e)', async () => {
   })
   afterAll(async () => await app.close())
 
-  it('should be able to search for gyms', async () => {
+  it('should be able to search for gyms by title', async () => {
     const { token } = await createAndAuthenticateUser(app)
 
     await request(app.server)
