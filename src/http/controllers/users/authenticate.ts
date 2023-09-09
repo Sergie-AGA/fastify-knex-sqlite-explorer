@@ -53,7 +53,7 @@ export async function authenticate(req: FastifyRequest, res: FastifyReply) {
       })
   } catch (err) {
     if (err instanceof InvalidCredentialsError) {
-      return res.status(400).send()
+      return res.status(400).send({ message: err.message })
     }
 
     throw err
