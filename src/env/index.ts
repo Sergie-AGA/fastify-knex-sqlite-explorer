@@ -8,9 +8,11 @@ if (process.env.NODE_ENV === 'test') {
 }
 
 const envSchema = z.object({
-  NODE_ENV: z.enum(['development', 'test', 'production']).default('production'),
+  NODE_ENV: z
+    .enum(['development', 'test', 'production'])
+    .default('development'),
   JWT_SECRET: z.string(),
-  DATABASE_URL: z.string(),
+  DATABASE_URL: z.string().default('../../db/app.db'),
   PORT: z.coerce.number().default(3333),
 })
 
