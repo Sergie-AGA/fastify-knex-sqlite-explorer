@@ -20,7 +20,7 @@ This repos includes both projects based on courses and personal implementations 
 Conclusions: Limited stack, will not be investing on this further.
 
 ## Goals project 2:
-[ ] - Learn how to do a basic crud API with stack and apply SOLID principles\
-[ ] - Add automated tests\
+[X] - Learn how to do a basic crud API with stack and apply SOLID principles\
+[X] - Add automated tests\
 [ ] - Add custom functionality based on the learned topics\
 [ ] - Add a frontend to it\
