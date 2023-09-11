@@ -12,7 +12,7 @@ This repos includes both projects based on courses and personal implementations 
 - Prisma + PostgreSQL gym registration and check-in control
 
 ### Personal projects:
-- tba
+- Poll creation
 
 ## Goals project 1:
 [X] - Learn how to do a basic crud API with the stack\
