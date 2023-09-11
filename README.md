@@ -22,5 +22,3 @@ Conclusions: Limited stack, will not be investing on this further.
 ## Goals project 2:
 [X] - Learn how to do a basic crud API with stack and apply SOLID principles\
 [X] - Add automated tests\
-[ ] - Add custom functionality based on the learned topics\
-[ ] - Add a frontend to it\
